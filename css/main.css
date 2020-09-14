@@ -8,6 +8,47 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 1em;
+}
+
+.logo {
+  grid-column: 1 / -1;
+  grid-row: 5;
+  z-index: 1;
+  width: 14rem;
+  margin: 0;
+}
+
+nav {
+  margin-left: 3em;
+  margin-right: 3em;
+  grid-column: 2 / -1;
+  grid-row: 1;
+  z-index: 1;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  font-family: "Patua One", serif;
+  font-size: 2rem;
+}
+
+a {
+  color: #fff;
+}
+
+.pano {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;]
+}
+
 img {
   width: 100%;
 }
@@ -16,11 +57,28 @@ header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-row: 2 / span 3;
+  grid-template-rows: 1fr 1fr 1fr 1fr 7em;
 }
 
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  margin-top: 1rem;
+}
+
+h2 {
+  margin-bottom: 0;
+  font-family: "Patua One", serif;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  color: #30658d;
+}
+
+p {
+  margin-top: .5rem;
+}
+
+figure {
+  margin: 0;
 }
